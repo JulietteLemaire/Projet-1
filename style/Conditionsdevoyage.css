@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style:none;
+}
+
+
+.header {
+   width: 100%;
+   margin: auto; /*centrer title sur la largeur de header*/
+   background-image: linear-gradient(130deg,#bd2b4a 0%,#475080 100%);
+   
+}
+
+.headerBottom {
+    display:flex;
+    align-items: center;
+}
+
+.flag {
+    width: 15vw;
+    float: left;
+    margin-left:15px;
+}
+
+.imgFlag {
+    max-width : 100%;
+    max-height: 100%;
+}
+
+.headerTitle {
+   text-align: center;
+   width: 60vw;
+   /* margin:auto; centrer uniquement au niveau de title*/
+}
+
+
+.headerNavigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+                          /* Conditions De Vogage */
+
+
+
+
+
+.home-main-title
+{
+    color: #ffdd71;
+    text-align: center;
+}
+
+
+                                       /* section */
+.home-section-title
+{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom:80px;
+    border-style:solid  ;
+}
+
+.activity-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+.activity-column
+{
+    width: 50vh;
+    border: #020202 solid 1px;
+    box-shadow: 5px 5px 15px 0px #000000;
+}
+
+                                               /* images */
+.activity-img
+{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.activity-column h3
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.activity-column p 
+{
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+                                            /* footer */
+.home-footer
+{
+    height: 10vh;
+    background-color: #ff906b;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .activity-container{flex-direction: column;
+
+    }
+    .activity-column{
+        width: 80rw;
+        margin-left: auto;
+        margin-right: auto;
+        height: 480px;
+        margin-bottom: 40px;
+        word-wrap: break-word;
+        overflow: scroll;
+    }
+    
+}
+
+
+
+
+
+                          /* fin de condition de voyage  */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Nunito:wght@200&display=swap');
+
+:root{
+    --title-font: 'Amiri', serif;
+    --body-font: 'Nunito', sans-serif;
+    --font-size-title: 30px;
+    --font-size-body: 20px;
+    --background-start: #00B9FF;
+    --background-end: #00D4ED; 
+    --title-color: #C40909;
+    --nav-btn-color: #F9F871;
+    --nav-btn-text:black;
+    
+}
+
+h1{
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: var(--font-size-title);
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--font-size-body);
+}
