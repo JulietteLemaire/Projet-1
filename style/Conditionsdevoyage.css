@@ -69,10 +69,26 @@
 {
     font-size: 30px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom:80px;
-    border-style:solid  ;
+     
 }
+
+.photo-title-2
+{
+    float: right;
+    width: 10vh;
+    height: 5vw;
+    
+}
+
+.photo-title{
+    justify-content: flex-start;
+    width: 40vh;
+    height: 15vw;
+
+}
+
 
 .activity-container
 {
@@ -100,7 +116,7 @@
 
 hr{
     height: 3px;
-    background-color: black;
+    background-color: rgb(243, 3, 3);
 }
 
 .activity-column h3
@@ -133,19 +149,19 @@ hr{
     }
     .activity-column{
     
-        width: 80rw;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         height: 480px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         word-wrap: break-word;
         overflow: scroll;
     }
     .activity-content{
-        font-size: 5px;
+        font-size: 15px;
     }
     .activity-column h3{
-        font-size: 10px;
+        font-size: 30px;
     }
    .activity-img
 {
@@ -153,6 +169,15 @@ hr{
     height: 30vh;
     object-fit: cover;
 }
+
+.photo-title{
+    justify-content: flex-start;
+    width: 20vh;
+    height: 30vw;
+
+}
+
+
 
     
 }
@@ -193,3 +218,91 @@ body{
     font-family: var(--body-font);
     font-size: var(--font-size-body);
 }
+
+
+
+
+
+                                                /* caroussel */
+
+
+
+
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+ .container {
+margin-bottom: 500px;
+}  
+
+
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://media.istockphoto.com/photos/portrait-of-women-in-cuban-traditional-dresses-picture-id811935914?k=20&m=811935914&s=612x612&w=0&h=DnQmufUcgb2zbU0XorSVoPzOIHvXzID33F5zXpnSZhs=");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("https://media.istockphoto.com/photos/tropical-colorful-mojito-at-a-wooden-bar-picture-id1129894314?k=20&m=1129894314&s=612x612&w=0&h=8CqvGynsOrGX6fEhDw13BZM4mLeDw1uOH5X5kmSaOfM=");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("https://media.istockphoto.com/photos/street-in-havana-cuba-with-vitage-american-car-picture-id168617405?k=20&m=168617405&s=612x612&w=0&h=sojBy1MFghBpkzqPXmsOjeTXTVLSwbg-2le4OntTv5c=");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://media.istockphoto.com/photos/havana-cuba-woman-smiling-happy-enjoying-car-road-trip-picture-id1193008834?k=20&m=1193008834&s=612x612&w=0&h=vIIiUiY2zLu2_R0hEsgYuh2NJ7NK7fQ4_4khYK45QN4=");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://media.istockphoto.com/photos/cuban-musician-playing-trumpet-havana-cuba-picture-id609823776?k=20&m=609823776&s=612x612&w=0&h=woLR8NlDxyVpS3MIrvLojvsZ7g06TkjODx2V6UbN6WQ=");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://media.istockphoto.com/photos/street-musicians-at-havana-cuba-picture-id828514848?k=20&m=828514848&s=612x612&w=0&h=FRSv-e5vzVVuNo2420ai6ZyFj4YfoYyG_dqCZ3pIRUw=");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://media.istockphoto.com/photos/cuban-man-rolling-cigar-picture-id109723032?k=20&m=109723032&s=612x612&w=0&h=1Lr8B2t9Lw-iuAtbJA59f0pBBYvEtBV-xE4eJnV8cNo=");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://media.istockphoto.com/photos/asian-tropical-beach-paradise-in-thailand-picture-id1097373600?k=20&m=1097373600&s=612x612&w=0&h=haDMKJfiC1vbKibovOIdOwzXDslRryld-mpGy0EwtTo=");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://media.istockphoto.com/vectors/flag-of-cuba-vector-id689094736?k=20&m=689094736&s=612x612&w=0&h=s-3DpzA-PXkCbLeWza5TaDNwS3A_NCO-XTeh-Hog0wU=");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+                                    
