@@ -12,7 +12,6 @@ h2 {
 
 .containerItemLarge {
     display: flex;
-    border: solid 1px black;
     flex-wrap: wrap;
     width: 90vw;
     margin-left: auto;
