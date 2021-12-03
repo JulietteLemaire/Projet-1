@@ -22,6 +22,8 @@ h2 {
 .item {
     margin-left: auto;
     margin-right: auto;
+    width: 450px;
+    height: 300px
 }
 
 @media screen and (max-width: 360px) {
@@ -30,10 +32,15 @@ h2 {
     }
     .carousel {
         display: block;
+        height: 400px;
+    }
+    .item {
+        width: 300px;
+        height: 300px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 361px) {
     .containerItemLarge {
         display: flex;
         flex-direction: column;
@@ -164,13 +171,14 @@ li {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-color: #f99;
+    /* background-color: #f99; */
     counter-increment: item;
 }
 
-.carousel__slide:nth-child(even) {
+
+/* .carousel__slide:nth-child(even) {
     background-color: #99f;
-}
+} */
 
 .carousel__slide:before {
     content: counter(item);
