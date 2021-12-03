@@ -1,0 +1,180 @@
+
+* {
+    margin:0;
+    padding:0;
+}
+.header {
+   width: 100%;
+   margin: auto; /*centrer title sur la largeur de header*/
+   background-image: linear-gradient(130deg,#bd2b4a 0%,#475080 100%);
+   
+}
+
+.headerBottom {
+    display:flex;
+    align-items: center;
+}
+
+.flag {
+    width: 15vw;
+    float: left;
+    margin-left:15px;
+}
+
+.imgFlag {
+    max-width : 100%;
+    max-height: 100%;
+}
+
+.headerTitle {
+   text-align: center;
+   width: 60vw;
+   /* margin:auto; centrer uniquement au niveau de title*/
+}
+
+
+.headerNavigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h1{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 20px;
+    font-family: var(--body-font);
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+article{
+   height: 500px;
+   width: 90%;
+   /*border: black solid 2px;*/
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   margin: 30px;
+   box-shadow: 3px 3px 4px black;
+}
+
+   
+.imgContainer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction:row;
+} 
+
+.havaneImg{
+width: 40%;
+height: 38vh;
+object-fit: contain;
+}
+
+.natureImg{
+width: 40%;
+height: 38vh;
+object-fit: contain;
+}
+
+.musicImg{
+width: 40%;
+height: 40vh;
+object-fit: contain;
+}
+
+p{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right:10px;
+    font-size: var(--font-size-body) ;
+}
+
+.musicPlayer{
+    font-family: var(--body-font);
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.musicArticle{
+    height: 550;
+} 
+
+
+@media screen and (max-width: 360px){
+    article{
+        overflow: auto;
+        height: 300px;
+        width: auto;
+        /*border: black solid 2px;*/
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 30px;
+        box-shadow: 3px 3px 4px black;
+     }
+    .havanaThird {
+        display:none;
+    }
+    .havanaFirst {
+        display:none;
+    }
+    .havanaSecond {
+        display: flex;
+        align-items: center;
+        width:50%;
+        flex-direction: row;
+    }
+
+    .natureFirst{
+        display: none;
+    }
+    .natureSecond{
+        display: none;
+    }
+
+    .musicSecond{
+        display: none;
+    }
+
+    .musicThird{
+        display: none;
+    }
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        } 
+    
+    .havaneImg{
+    width: 80%;
+    height: 38vh;
+    object-fit: contain;
+    }
+
+    .natureImg{
+        width: 80%;
+        height: 38vh;
+        object-fit: contain;
+    }
+
+    .musicImg{
+        width: 80%;
+        height: 38vh;
+        object-fit: contain;
+    }
+
+  
+}
