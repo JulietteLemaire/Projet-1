@@ -115,12 +115,12 @@ h2 {
     font-family: 'Lato', sans-serif;
 }*/
 
-* {
+
+/* * {
     box-sizing: border-box;
     scrollbar-color: transparent transparent;
-    /* thumb and track color */
-    scrollbar-width: 0px;
-}
+    
+} */
 
 *::-webkit-scrollbar {
     width: 0;
