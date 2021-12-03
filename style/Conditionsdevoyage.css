@@ -1,48 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style:none;
-}
 
-
-.header {
-   width: 100%;
-   margin: auto; /*centrer title sur la largeur de header*/
-   background-image: linear-gradient(130deg,#bd2b4a 0%,#475080 100%);
-   
-}
-
-.headerBottom {
-    display:flex;
-    align-items: center;
-}
-
-.flag {
-    width: 15vw;
-    float: left;
-    margin-left:15px;
-}
-
-.imgFlag {
-    max-width : 100%;
-    max-height: 100%;
-}
-
-.headerTitle {
-   text-align: center;
-   width: 60vw;
-   /* margin:auto; centrer uniquement au niveau de title*/
-}
-
-
-.headerNavigation {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-                          /* Conditions De Vogage */
 
 
 .activity-content{
