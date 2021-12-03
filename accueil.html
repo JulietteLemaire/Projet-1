@@ -63,7 +63,8 @@
         <div class="activity">
         
             <div class="buttonActivity">Activités</div>
-            <img src="assets/trompetteCuba.jpg" alt="trompetteCuba">
+            <img src="assets/trompetteCuba.jpg" 
+            alt="trompetteCuba" id="imgActivity">
         </div>
 
         
@@ -72,21 +73,21 @@
         
             <div class="buttonActivity">Hotel</div>
            <img src="https://a0.muscache.com/im/pictures/7947e344-39d3-4ed0-bd52-c06fcfd8f502.jpg?im_w=1200"
-            alt="ImgHotel">
+            alt="ImgHotel" id="imgHotel">
 
         </div>
       
         <div class="restaurant">
             <div class="buttonActivity">Restaurant</div>
             <img src="https://images.unsplash.com/photo-1529456649654-4a285c7aa832?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2012&q=80" 
-            alt="imgRestaurant">
+            alt="imgRestaurant" id="imgRestaurant">
         </div>
      </section>
 
      <section>
     
         <form action="" class="form">
-            <h2>Contacté nous</h2>
+            <h2>Contactez nous</h2>
             <input type="text" id="name" placeholder="Votre nom">
             <input type="text" id="email" placeholder="Votre Email">
             <textarea name="text" id="text" cols="30" rows="5" placeholder="Votre message"></textarea>
@@ -96,6 +97,14 @@
          
 
      </section>
+     <script>
+         const button = document.querySelectorById("submit")
+         button.onclick = function(){
+             
+             alert("merci");
+         }
+     </script>
+
 <footer>
 
 </footer>
