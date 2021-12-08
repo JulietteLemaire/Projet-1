@@ -3,7 +3,7 @@ const rightButton = document.getElementById('rightBtn');
 const container = document.getElementById('Slidecontainer');
 const itemResto = document.getElementsByClassName('sliderItem')[0];
 const leftBarButton = document.getElementById('leftBarBtn');
-const rightBarButton = document.getElementById('righBarBtn');
+const rightBarButton = document.getElementById('rightBarBtn');
 const barContainer = document.getElementById('SlideBarcontainer');
 
 leftButton.addEventListener('click', () => {
@@ -44,7 +44,9 @@ leftBarButton.addEventListener('click', () => {
     }
 });
 rightBarButton.addEventListener('click', () => {
+    console.log('toto');
     const widthDivItem = parseInt(window.getComputedStyle(itemResto).getPropertyValue('width'));
+
     let move = widthDivItem + 5;
     barContainer.scrollBy(move, 0);
     if (barContainer.scrollLeft > 0) {
