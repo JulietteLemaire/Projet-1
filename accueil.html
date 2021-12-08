@@ -86,7 +86,7 @@
         </div>
      </section>
 
-     <section >
+     <section>
         <div class="theMap">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZhPNf0nkIMbkNjPbZHoWIg2zYisfdF1l&ehbc=2E312F" id="map"></iframe>
         </div>
@@ -99,7 +99,7 @@
             <input type="text" id="name" placeholder="Votre nom" required>
             <input type="text" id="email" placeholder="Votre Email">
             <textarea name="text" id="text" cols="30" rows="5" placeholder="Votre message"></textarea>
-            <button type="submit" id="submit" value="Envoyer"></button>
+            <button type="submit" id="submit">Envoyer</button>
         </form>
     
          
@@ -154,8 +154,17 @@
 </footer>
 <script>
    document.addEventListener('submit', function (event){
-       let name = document.getElementById('name').value ;
-       alert(`Merci ${name} pour votre message`)
+
+       const name = document.getElementById('name').value ;
+       const message = document.getElementById('text').value ;
+       const motBoire = message.indexOf('boire');
+       const motBoireMaj = message.indexOf('Boire');
+
+       if( motBoire != -1 || motBoireMaj != -1 ){
+        alert(`${name} viens boire un coup ! c'est louis qui paye ! `)
+       } else{ 
+           alert(`Merci ${name} pour votre message`) }
+
        event.preventDefault();
    })
 </script>
