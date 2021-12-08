@@ -229,6 +229,7 @@ footer {
 .footerContainer section {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     position: relative;
     width: 100vw;
     height: 100px;
@@ -238,26 +239,23 @@ footer {
     width:33%;
 
 }
-.contact {
+
+section {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    transition: var(--transition-property);
+}
+.contact {
+    display: flex;
+    justify-content: center;
 }
 
 .contactEmail {
     background-color: var(--nav-btn-color);
     color: var(--background-start);
-    margin-right: 0;
     position: relative;
     overflow: hidden;
-    box-sizing: border-box;
-    display: inline-block;
-    font-size: 18px;
-    text-align: center;
     height: 50px;
-    top: 25px;
     border-radius: 50px;
     transition: var(--transition-property);
     max-width:50px;
@@ -267,10 +265,9 @@ footer {
     max-width: 100%
 }
 
-.contactEmail:hover ~.fas {
+.contactEmail:hover i {
     background-color: var(--background-start);
     color: var(--nav-btn-color);
-    border: 0px solid var(--background-start);
     height: 46px;
     width: 46px;
     margin: 2px;
@@ -278,34 +275,11 @@ footer {
     transform: rotate(360deg);
 }
 
-.contactEmail:before,
-.contactEmail:after {
-    content:"";
-    position:absolute;
-    z-index:1;
-    border-radius: 50px;
-    transition: var(--transition-property);
-}
-
-.contactEmail:after {
-    content: "";
-    position: absolute;
-    z-index:1;
-    border-radius:50px;
-    transition: var(--transition-property);
-}
-
 .fa, .fas {
-    z-index:4;
     position: absolute;
-    display: inline-block;
     width: 50px;
-    height:50px;
-    left:0;
-    top:0;
     font-size: 28px;
     transition: var(--transition-property);
-    box-shadow: 2px 2px 7px 2px var(--background-start);
 }
 
 .contactEmail i:before {
@@ -316,50 +290,27 @@ footer {
 
 .contactEmail a {
     margin-left:60px;
-    text-transform:uppercase;
-    font-size:16px;
-    z-index:3;
     position: relative;
-    opacity:1;
-    visibility: hidden;
     transition: var(--transition-property);
     top:-100px;
-    font-weight: 400;
     margin-right: 22px;
-    background-color: transparent;
     cursor: pointer;
 }
 
-.contactEmail:hover ~.contactEmail a{
-    opacity:1;
-    visibility: visible;
+.contactEmail:hover a{
     top: 13px;
-    white-space: nowrap;
 }
 
 .contactTelephone {
     background-color: var(--nav-btn-color);
-    margin-right: 0;
     left: 17px;
     position: relative;
     color: var(--background-start);
     overflow: hidden;
-    display:inline-block;
-    font-size: 18px;
     height: 50px;
-    top: 25px;
     border-radius: 50px;
     transition: var(--transition-property);
     max-width: 50px;
-}
-
-.contactTelephone:before,
-.contactTelephone:after {
-    content:"";
-    position: absolute;
-    z-index:1;
-    border-radius:50px;
-    transition: var(--transition-property);
 }
 
 .contactTelephone:hover {
@@ -372,10 +323,9 @@ footer {
     top: 11px;
 }
 
-.contactTelephone:hover ~.contactTelephone i {
+.contactTelephone:hover i {
     background-color: var(--background-start);
     color: var(--nav-btn-color);
-    border: 0px solid var(--background-start);
     height: 46px;
     width: 46px;
     margin: 2px;
@@ -385,107 +335,62 @@ footer {
 
 .contactTelephone a {
     margin-left:60px;
-    text-transform: uppercase;
-    font-size: 16px;
-    z-index:3;
     position: relative;
-    opacity:1;
-    visibility: hidden;
     transition: var(--transition-property);
     top: -100px;
-    font-weight: 400;
     margin-right: 22px;
-    background-color: transparent; 
 }
 
-.contactTelephone:hover ~.contactTelephone a {
-    opacity: 1;
-    visibility: visible;
+.contactTelephone:hover a {
     top: 13px;
-    white-space: nowrap;;
 }
 
 .contactTelephone:after {
     width:100%;
 }
 
-.contactTelephone:before,
-.contactTelephone:after {
-    content:"";
-    position: absolute;
-    z-index:1;
-    border-radius: 50px;
-    transition: var(--transition-property);
-}
-
-.logoFooterContainer {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    display:block;
-    width:33%;
-}
-
 .logoFooterContainer a {
-    background-color: transparent;
     cursor: pointer;
 }
 
 .logoFooterImg {
-    max-width: 250px;
-    height: auto;
-    margin-top: 30px;
-    vertical-align: middle;
-    border:0;
+    margin-top: 20px;
     width:116px;
 }
 
 .mediaSocial {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
     width: 33%;
 }
 
 .iconeSocialList {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.iconeSocialList li{
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
-    color: var(--title-color);
 }
 
 .iconeSocialList li a {
-    background-image: none;
     background-color: var(--nav-btn-color);
     color: var(--background-start);
-    border-radius: 40px;
-    margin: 5px;
-    height: 45px;
-    width: 45px;
-    text-align: center;
+    border-radius: 50px;
+    margin:8px;
+    height: 50px;
+    width: 50px;
     display: block;
-    padding: 0;
     line-height: 50px;
-    overflow: hidden;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 28px;
+    transition: var(--transition-property);
 }
 
-.legalNotice {
-    width: 100%;
-    position: relative;
-    min-height: 1px;
+.iconeSocialList li a i {
+    height: 46px;
+    width:46px;
+    border-radius:50px;
+}
+
+.iconeSocialList li:hover a {
+    background-color: var(--background-start);
+    color: var(--nav-btn-color);
+    transform: rotate(360deg);
 }
 
 .legalNotice p {
