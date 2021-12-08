@@ -38,7 +38,12 @@ h2{
 body{
     font-family: var(--body-font);
     font-size: var(--font-size-body);
+    cursor: url('/img/cigare.png'), default;
 }
+
+a {
+    cursor: url('/img/cigarefumee.png'), default;
+ }
 
 /* header */
 
@@ -195,6 +200,11 @@ body{
     .navA {
        margin: 40px; 
     }
+
+    .navA a:hover {
+        background-color: transparent;
+        color: var(--nav-btn-color);
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -204,7 +214,13 @@ body{
 
     .title {
         text-align:center;
+        font-size: 35px;
     }
+
+    .logoFlagImg {
+        height: 80px;
+    }
+
 }
 
 .divFantome {
@@ -213,6 +229,7 @@ body{
     width: 100%;
 
 }
+
 
 /* footer */
 
@@ -232,7 +249,7 @@ footer {
     align-items: center;
     position: relative;
     width: 100vw;
-    height: 100px;
+    height: 100%;
     align-items: center;
 }
 .contactContainer {
@@ -244,32 +261,40 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
+}
+
+section p {
+    font-size: 15px;
+    margin-bottom: 5px
 }
 .contact {
     display: flex;
     justify-content: center;
 }
 
-.contactEmail {
+.contactEmail, .contactTelephone {
     background-color: var(--nav-btn-color);
     color: var(--background-start);
     position: relative;
     overflow: hidden;
-    height: 50px;
+    height: 40px;
     border-radius: 50px;
     transition: var(--transition-property);
-    max-width:50px;
+    max-width:40px;
+    margin:7px;
 }
 
-.contactEmail:hover {
+
+.contactEmail:hover, .contactTelephone:hover {
     max-width: 100%
 }
 
-.contactEmail:hover i {
+.contactEmail:hover i, .contactTelephone:hover i {
     background-color: var(--background-start);
     color: var(--nav-btn-color);
-    height: 46px;
-    width: 46px;
+    height: 35px;
+    width: 35px;
     margin: 2px;
     border-radius: 50px;
     transform: rotate(360deg);
@@ -277,84 +302,31 @@ section {
 
 .fa, .fas {
     position: absolute;
-    width: 50px;
-    font-size: 28px;
+    width: 40px;
+    font-size: 18px;
     transition: var(--transition-property);
 }
 
-.contactEmail i:before {
+.contactEmail i:before, .contactTelephone i:before {
     top:9px;
     position: relative;
 }
 
-
-.contactEmail a {
+.contactEmail a, .contactTelephone a {
     margin-left:60px;
     position: relative;
     transition: var(--transition-property);
     top:-100px;
     margin-right: 22px;
-    cursor: pointer;
-}
-
-.contactEmail:hover a{
-    top: 13px;
-}
-
-.contactTelephone {
-    background-color: var(--nav-btn-color);
-    left: 17px;
-    position: relative;
+    font-size: 18px;
     color: var(--background-start);
-    overflow: hidden;
-    height: 50px;
-    border-radius: 50px;
-    transition: var(--transition-property);
-    max-width: 50px;
 }
 
-.contactTelephone:hover {
-    left:17px;
-    max-width: 100%;
-}
-
-.contactTelephone i:before {
-    position: relative;
-    top: 11px;
-}
-
-.contactTelephone:hover i {
-    background-color: var(--background-start);
-    color: var(--nav-btn-color);
-    height: 46px;
-    width: 46px;
-    margin: 2px;
-    border-radius: 50px;
-    transform: rotate(360deg);
-}
-
-.contactTelephone a {
-    margin-left:60px;
-    position: relative;
-    transition: var(--transition-property);
-    top: -100px;
-    margin-right: 22px;
-}
-
-.contactTelephone:hover a {
-    top: 13px;
-}
-
-.contactTelephone:after {
-    width:100%;
-}
-
-.logoFooterContainer a {
-    cursor: pointer;
+.contactEmail:hover a, .contactTelephone:hover a {
+    top: 9px;
 }
 
 .logoFooterImg {
-    margin-top: 20px;
     width:116px;
 }
 
@@ -372,18 +344,16 @@ section {
     color: var(--background-start);
     border-radius: 50px;
     margin:8px;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: block;
-    line-height: 50px;
-    cursor: pointer;
-    font-size: 28px;
+    line-height: 40px;
     transition: var(--transition-property);
 }
 
 .iconeSocialList li a i {
-    height: 46px;
-    width:46px;
+    height: 35px;
+    width:35px;
     border-radius:50px;
 }
 
@@ -400,4 +370,24 @@ section {
     font-size: 13px;
     font-weight:500;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width:360px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logoFooterImg {
+        width: 80px;
+    }
+
+    .contactContainer {
+        width: 100%;
+    }
+
+    .iconeSocialList {
+        margin: 0;
+    }
 }
