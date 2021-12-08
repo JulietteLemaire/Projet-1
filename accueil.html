@@ -157,11 +157,11 @@
 
        const name = document.getElementById('name').value ;
        const message = document.getElementById('text').value ;
-       const motBoire = message.indexOf('boire');
-       const motBoireMaj = message.indexOf('Boire');
+       const motBoire = message.toUpperCase('BOIRE');
+   
 
-       if( motBoire != -1 || motBoireMaj != -1 ){
-        alert(`${name} viens boire un coup ! c'est louis qui paye ! `)
+       if( motBoire =='BOIRE' ){
+        alert(`${name} viens boire un coup ! c'est Louis qui paye ! `)
        } else{ 
            alert(`Merci ${name} pour votre message`) }
 
