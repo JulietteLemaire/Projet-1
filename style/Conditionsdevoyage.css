@@ -1,6 +1,3 @@
-
-
-
 .activity-content{
     font-family: var(--body-font);
     font-size: var(--font-size-body);
@@ -133,52 +130,8 @@ hr{
 
 }
 
-
-
-    
+   
 }
-
-
-
-
-
-                          /* fin de condition de voyage  */
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Nunito:wght@200&display=swap');
-
-:root{
-    --title-font: 'Amiri', serif;
-    --body-font: 'Nunito', sans-serif;
-    --font-size-title: 30px;
-    --font-size-body: 20px;
-    --background-start: #00B9FF;
-    --background-end: #00D4ED; 
-    --title-color: #C40909;
-    --nav-btn-color: #F9F871;
-    --nav-btn-text:black;
-    
-}
-
-h1{
-    font-family: var(--title-font);
-    color: var(--title-color);
-    font-size: var(--font-size-title);
-}
-
-body{
-    font-family: var(--body-font);
-    font-size: var(--font-size-body);
-}
-
-
-
-
-
                                                 /* caroussel */
 
 
