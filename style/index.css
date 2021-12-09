@@ -36,20 +36,12 @@ body {
     font-family: var(--body-font);
     font-size: var(--font-size-body);
     cursor: url('/img/cigare.png'), default;
-<<<<<<< HEAD
-}
-
-a {
-    cursor: url('/img/cigarefumee.png'), default;
- }
-=======
 }
 
 a {
     cursor: url('/img/cigarefumee.png'), default;
 }
 
->>>>>>> resto2
 
 /* header */
 
@@ -207,11 +199,6 @@ a {
         background-color: transparent;
         color: var(--nav-btn-color);
     }
-
-    .navA a:hover {
-        background-color: transparent;
-        color: var(--nav-btn-color);
-    }
 }
 
 @media screen and (max-width:360px) {
@@ -219,27 +206,12 @@ a {
         display: none;
     }
     .title {
-<<<<<<< HEAD
-        text-align:center;
-        font-size: 35px;
-    }
-
-=======
         text-align: center;
         font-size: 35px;
     }
->>>>>>> resto2
     .logoFlagImg {
         height: 80px;
     }
-
-}
-
-.divFantome {
-    background-color: orange;
-    height: 300px;
-    width: 100%;
-
 }
 
 .divFantome {
@@ -256,11 +228,7 @@ footer {
     position: relative;
     padding: 0;
     text-align: center;
-<<<<<<< HEAD
-    display:block;
-=======
     display: block;
->>>>>>> resto2
     color: black;
 }
 
@@ -273,14 +241,9 @@ footer {
     height: 100%;
     align-items: center;
 }
-.contactContainer {
-    width:33%;
 
-<<<<<<< HEAD
-=======
 .contactContainer {
     width: 33%;
->>>>>>> resto2
 }
 
 .footerSection {
@@ -288,31 +251,20 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-<<<<<<< HEAD
-=======
-}
-
-.footerSection p {
-    font-size: 15px;
-    margin-bottom: 5px
->>>>>>> resto2
 }
 
 .footerSection p {
     font-size: 15px;
     margin-bottom: 5px
 }
+
 .contact {
     display: flex;
     justify-content: center;
 }
 
-<<<<<<< HEAD
-.contactEmail, .contactTelephone {
-=======
 .contactEmail,
 .contactTelephone {
->>>>>>> resto2
     background-color: var(--nav-btn-color);
     color: var(--background-start);
     position: relative;
@@ -320,18 +272,6 @@ footer {
     height: 40px;
     border-radius: 50px;
     transition: var(--transition-property);
-<<<<<<< HEAD
-    max-width:40px;
-    margin:7px;
-}
-
-
-.contactEmail:hover, .contactTelephone:hover {
-    max-width: 100%
-}
-
-.contactEmail:hover i, .contactTelephone:hover i {
-=======
     max-width: 40px;
     margin: 7px;
 }
@@ -343,7 +283,6 @@ footer {
 
 .contactEmail:hover i,
 .contactTelephone:hover i {
->>>>>>> resto2
     background-color: var(--background-start);
     color: var(--nav-btn-color);
     height: 35px;
@@ -353,36 +292,14 @@ footer {
     transform: rotate(360deg);
 }
 
-<<<<<<< HEAD
-.fa, .fas {
-=======
 .fa,
 .fas {
->>>>>>> resto2
     position: absolute;
     width: 40px;
     font-size: 18px;
     transition: var(--transition-property);
 }
 
-<<<<<<< HEAD
-.contactEmail i:before, .contactTelephone i:before {
-    top:9px;
-    position: relative;
-}
-
-.contactEmail a, .contactTelephone a {
-    margin-left:60px;
-    position: relative;
-    transition: var(--transition-property);
-    top:-100px;
-    margin-right: 22px;
-    font-size: 18px;
-    color: var(--background-start);
-}
-
-.contactEmail:hover a, .contactTelephone:hover a {
-=======
 .contactEmail i:before,
 .contactTelephone i:before {
     top: 9px;
@@ -402,25 +319,10 @@ footer {
 
 .contactEmail:hover a,
 .contactTelephone:hover a {
->>>>>>> resto2
     top: 9px;
 }
 
 .logoFooterImg {
-<<<<<<< HEAD
-    width:116px;
-}
-
-.mediaSocial {
-    width: 33%;
-}
-
-.iconeSocialList {
-    display: flex;
-    justify-content: center;
-}
-
-=======
     width: 116px;
 }
 
@@ -433,16 +335,11 @@ footer {
     justify-content: center;
 }
 
->>>>>>> resto2
 .iconeSocialList li a {
     background-color: var(--nav-btn-color);
     color: var(--background-start);
     border-radius: 50px;
-<<<<<<< HEAD
-    margin:8px;
-=======
     margin: 8px;
->>>>>>> resto2
     height: 40px;
     width: 40px;
     display: block;
@@ -452,13 +349,8 @@ footer {
 
 .iconeSocialList li a i {
     height: 35px;
-<<<<<<< HEAD
-    width:35px;
-    border-radius:50px;
-=======
     width: 35px;
     border-radius: 50px;
->>>>>>> resto2
 }
 
 .iconeSocialList li:hover a {
@@ -469,17 +361,10 @@ footer {
 
 .legalNotice p {
     letter-spacing: 2px;
-<<<<<<< HEAD
-    margin:30px auto;
-    display: block;
-    font-size: 13px;
-    font-weight:500;
-=======
     margin: 30px auto;
     display: block;
     font-size: 13px;
     font-weight: 500;
->>>>>>> resto2
     padding-bottom: 10px;
 }
 
@@ -489,21 +374,6 @@ footer {
         flex-direction: column;
         justify-content: space-around;
     }
-<<<<<<< HEAD
-
-    .logoFooterImg {
-        width: 80px;
-    }
-
-    .contactContainer {
-        width: 100%;
-    }
-
-    .iconeSocialList {
-        margin: 0;
-    }
-}
-=======
     .logoFooterImg {
         width: 80px;
     }
@@ -514,4 +384,3 @@ footer {
         margin: 0;
     }
 }
->>>>>>> resto2
