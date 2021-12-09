@@ -1,44 +1,3 @@
-
-* {
-    margin:0;
-    padding:0;
-}
-.header {
-   width: 100%;
-   margin: auto; /*centrer title sur la largeur de header*/
-   background-image: linear-gradient(130deg,#bd2b4a 0%,#475080 100%);
-   
-}
-
-.headerBottom {
-    display:flex;
-    align-items: center;
-}
-
-.flag {
-    width: 15vw;
-    float: left;
-    margin-left:15px;
-}
-
-.imgFlag {
-    max-width : 100%;
-    max-height: 100%;
-}
-
-.headerTitle {
-   text-align: center;
-   width: 60vw;
-   /* margin:auto; centrer uniquement au niveau de title*/
-}
-
-
-.headerNavigation {
-    display: flex;
-    justify-content: space-around;
-}
-
-
 h1{
     padding: 10px;
     margin-bottom: 30px;
@@ -48,93 +7,431 @@ h2{
     font-size: 20px;
     font-family: var(--body-font);
     padding: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 13px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
 }
+
+h3{
+    font-size: 18px;
+    font-family: var(--body-font);
+    font-style: italic;
+    padding: 7px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+/*.intro{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right:60px;
+}*/
+
+.blocActivites{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items:flex-start;
+}
+
 
 article{
-   height: 500px;
-   width: 90%;
-   /*border: black solid 2px;*/
-   border-radius: 10px;
-   display: flex;
+   display:flex;
    flex-direction: column;
    justify-content: space-evenly;
-   margin: 30px;
-   box-shadow: 3px 3px 4px black;
+   height: auto;
+   width: auto;
+   margin-right: 10px;
+   margin-left: 10px;
+   margin-bottom: 40px;
+   /*border: black solid 2px;
+   border-radius: 10px;
+   box-shadow: 3px 3px 4px black;*/
+   text-align:justify;
+   
 }
 
-   
+
 .imgContainer{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction:row;
-} 
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction:row;
+    margin: 5px;
+    object-fit: contain;
+    width: auto;
+    height: auto;    
+}
 
 .havaneImg{
-width: 40%;
-height: 38vh;
-object-fit: contain;
+    width: 100%;
+    height: 58vh;
+    object-fit: contain;
+}
+
+.trinidadImg{
+    width: 100%;
+    height: 55vh;
+    object-fit: contain;  
 }
 
 .natureImg{
-width: 40%;
-height: 38vh;
-object-fit: contain;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 60vh;
+    object-fit: contain;
 }
 
 .musicImg{
-width: 40%;
-height: 40vh;
-object-fit: contain;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 53vh;
+    object-fit: contain;
 }
 
-p{
+.produitsImg{
+    width: 100%;
+    height: 57vh;
+    object-fit: contain;  
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right:10px;
-    font-size: var(--font-size-body) ;
+}
+
+.voituresImg{
+    width: 100%;
+    height: 57vh;
+    object-fit: contain;  
+    margin-bottom: 10px;
+}
+
+
+
+/*.imgActContainer{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    height:40px;
+    width: 100%;
+} 
+
+#carousel{
+    width: fit-content;
+    height: fit-content;
+    overflow:hidden;
+    border: solid 5px white;
+    border-radius: 10px;
+}
+ 
+.activitesImg{
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mesImages{
+    0% {
+        transform: translateX(0);
+        
+    }
+    20% {
+        transform: translateX(-640px) ;
+        
+    }
+    40% {
+        transform: translateX(-1280px) ;
+        
+    }
+    60%{ 
+        transform: translateX(-1920px) ;
+        
+    }
+    80% {
+        transform: translateX(-2560px) ;
+        
+    }
+    100% {
+        transform: translateX(0) ;
+        
+    }
+} 
+*/
+/*.imgContainer{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    height:100vh;
+} 
+
+#carousel2{
+    width: 640px;
+    overflow:hidden;
+    border: solid 5px white;
+    border-radius: 10px;
+}
+ 
+.trinidadImg{
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: mesImages2;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mesImages2{
+    0% {
+        transform: translateX(0);
+        
+    }
+    33.5% {
+        transform: translateX(-640px) ;
+        
+    }
+    66.5% {
+        transform: translateX(-1280px) ;
+        
+    }
+    100%{ 
+        transform: translateX(0) ;
+        
+    }
+} 
+
+.imgContainer{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    height:100vh;
+} 
+
+#carousel3{
+    width: 640px;
+    overflow:hidden;
+    border: solid 5px white;
+    border-radius: 10px;
+}
+ 
+.natureImg{
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: mesImages3;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mesImages3{
+    0% {
+        transform: translateX(0);
+        
+    }
+    20% {
+        transform: translateX(-640px) ;
+        
+    }
+    40% {
+        transform: translateX(-1280px) ;
+        
+    }
+    60%{ 
+        transform: translateX(-1920px) ;
+        
+    }
+    80% {
+        transform: translateX(-2560px) ;
+        
+    }
+    100% {
+        transform: translateX(0) ;
+        
+    }
+} 
+
+/*.imgContainer{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    height:100vh;
+} 
+
+#carousel4{
+    width: 640px;
+    overflow:hidden;
+    border: solid 3px white;
+    border-radius: 10px;
+}
+ 
+.cultureImg{
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-name: mesImages4;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mesImages4{
+    0% {
+        transform: translateX(0);
+        
+    }
+    20% {
+        transform: translateX(-640px) ;
+        
+    }
+    40% {
+        transform: translateX(-1280px) ;
+        
+    }
+    60%{ 
+        transform: translateX(-1920px) ;
+        
+    }
+    80% {
+        transform: translateX(-2560px) ;
+        
+    }
+    100% {
+        transform: translateX(0) ;
+        
+    }
+} 
+*/
+
+p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right:60px;
+    font-size: var(--font-size-body);
+    text-align: justify;
+}
+
+.excursion{
+  border: solid 2px #00D4ED;
+  border-radius: 10px;
+  /*background-color: #00D4ED;*/
+  width: 320px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-right:50px;  
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: var(--font-size-body);
+}
+
+.excursion:hover{
+    transform: scale(1.2);
+    
 }
 
 .musicPlayer{
     font-family: var(--body-font);
     padding: 5px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     justify-content: center;
+    align-items:center;
+}
 
+figcaption{
+    font-style: italic;
+    font-family: var (--body-font);
+}
+
+figure{
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F9F871;
+    border-radius: 10px;
 
 }
 
-.musicArticle{
-    height: 550;
-} 
+figure:active{
+    background-color:#00D4ED;
+    border-radius: 10px;
+}
+
+figure:hover{
+    transform: scale(1.2);
+}
 
 
-@media screen and (max-width: 360px){
-    article{
+
+@media screen and (max-width: 767px){
+    
+    .blocActivites{
         overflow: auto;
-        height: 300px;
+        height: auto;
         width: auto;
         /*border: black solid 2px;*/
+        /*border-radius: 10px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto;
+
+    }
+
+    article {
+        overflow: auto;
+        height: auto;
+        width: auto;
+        border: black solid 2px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin: 30px;
-        box-shadow: 3px 3px 4px black;
+        margin: auto;
+        /*box-shadow: 3px 3px 4px black;*/
      }
-    .havanaThird {
+
+     h3{
+         margin-top: 18px;
+     }
+
+    .havaneFirst{
+        display:none
+    } 
+
+    .havaneSecond {
+    display: flex;
+    align-items: center;
+    width:auto;
+    flex-direction: row;
+    }
+    
+    .havaneThird{
+        display: none;
+    }
+    
+    .trinidadSecond {
         display:none;
     }
-    .havanaFirst {
-        display:none;
-    }
-    .havanaSecond {
+    
+    .trinidadFirst {
         display: flex;
         align-items: center;
-        width:50%;
+        width:auto;
         flex-direction: row;
+        object-fit: contain;
     }
 
     .natureFirst{
@@ -142,6 +439,20 @@ p{
     }
     .natureSecond{
         display: none;
+    }
+
+    .natureThird{
+        display: flex;
+        align-items: center;
+        width:auto;
+        flex-direction: row;
+    }
+
+    .musicFirst{
+        display: flex;
+        align-items: center;
+        width:auto;
+        flex-direction: row;
     }
 
     .musicSecond{
@@ -152,29 +463,162 @@ p{
         display: none;
     }
 
+    .produitsFirst{
+        display: none;
+    }
+
+    .produitsSecond{
+        display: flex;
+        align-items: center;
+        width:auto;
+        flex-direction: row;
+    }
+
+    .voituresFirst{
+        display: flex;
+        align-items: center;
+        width:auto;
+        flex-direction: row;
+    }
+
+    .voituresSecond{
+        display: none;
+    }
+
     .imgContainer{
         display: flex;
         justify-content: center;
         flex-direction:row;
         } 
+
+.navA:active{
+    transform: none;
+}
+}
+
+@media screen and (max-width: 360px){
+    article {
+        overflow:hidden;
+        height: auto;
+        width: 90%;
+        border: black solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /*margin: auto;*/
+        /*box-shadow: 3px 3px 4px black;*/
+     }
+
+
+     h3{
+         margin-top: 18px;
+     }
+
+    .havaneFirst{
+        display:none
+    } 
+
+    .havaneSecond {
+    display: flex;
+    align-items: center;
+    width:90%;
+    flex-direction: row;
+    }
     
-    .havaneImg{
-    width: 80%;
-    height: 38vh;
-    object-fit: contain;
+    .havaneThird{
+        display: none;
     }
-
-    .natureImg{
-        width: 80%;
-        height: 38vh;
+    
+    .trinidadSecond {
+        display:none;
+    }
+    /*.trinidadThird {
+        display:none;
+    }*/
+    .trinidadFirst {
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
         object-fit: contain;
     }
 
-    .musicImg{
-        width: 80%;
-        height: 38vh;
-        object-fit: contain;
+    .natureFirst{
+        display: none;
+    }
+    .natureSecond{
+        display: none;
     }
 
-  
+    .natureThird{
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
+    }
+
+    .musicFirst{
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
+    }
+
+    .musicSecond{
+        display: none;
+    }
+
+    .musicThird{
+        display: none;
+    }
+
+    .produitsFirst{
+        display: none;
+    }
+
+    .produitsSecond{
+        display: flex;
+        align-items: center;
+        width:95%;
+        flex-direction: row;
+    }
+
+    .voituresFirst{
+        display: flex;
+        align-items: center;
+        width:95%;
+        flex-direction: row;
+    }
+
+    .voituresSecond{
+        display: none;
+    }
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        } 
+
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        } 
+
+    .excursion{   
+        /*background-color: #00D4ED;*/
+        height: auto;
+        width: 50%; 
+        text-align: justify;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: var(--font-size-body);
+    }
+
+.navA:active{
+    transform: none;
+}
 }
