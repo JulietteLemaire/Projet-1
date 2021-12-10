@@ -212,6 +212,15 @@ a {
     .logoFlagImg {
         height: 80px;
     }
+<<<<<<< HEAD
+=======
+}
+
+.divFantome {
+    background-color: orange;
+    height: 300px;
+    width: 100%;
+>>>>>>> karimloveyou
 }
 
 
@@ -292,6 +301,7 @@ footer {
     width: 40px;
     font-size: 18px;
     transition: var(--transition-property);
+    font-weight: bold;
 }
 
 .contactEmail i:before,
@@ -362,7 +372,11 @@ footer {
     padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width:400px) {
+=======
+@media screen and (max-width:360px) {
+>>>>>>> karimloveyou
     .footerSection {
         display: flex;
         flex-direction: column;

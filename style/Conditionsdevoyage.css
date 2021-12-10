@@ -1,239 +1,317 @@
-    .activity-content {
-        font-family: var(--body-font);
-        font-size: var(--font-size-body);
-    }
-    
-    .activity-title {
-        color: var(--title-color);
-        font-size: var(--font-size-title);
-    }
-    
-    .home-main-title {
-        color: #ffdd71;
-        text-align: center;
-    }
-    /* section */
-    
-    .home-section-title {
-        font-size: 30px;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 80px;
-        left: 15%;
-        position: relative;
-    }
-    
-    .photo-title-2 {
-        float: right;
-        width: 10vh;
-        height: 5vw;
-    }
-    
-    #cuba1 {
-        float: right;
-        height: 10vh;
-        position: relative;
-        bottom: 287px;
-        right: 20px;
-    }
-    
-    .photo-title {
-        justify-content: flex-start;
-        height: 30vh;
-    }
-    
-    .activity-container {
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 60px;
-        height: 700px;
-    }
-    
-    .activity-column {
-        overflow: scroll;
-        width: 30%;
-        border: #020202 solid 1px;
-        box-shadow: 5px 5px 15px 0px #000000;
-    }
-    /* images */
-    
-    .activity-img {
-        width: 100%;
-        height: 30vh;
-        object-fit: cover;
-    }
-    
-    hr {
-        height: 3px;
-        background-color: rgb(243, 3, 3);
-    }
-    
-    .activity-column h3 {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .activity-column p {
-        text-align: justify;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* footer */
-    
-    .home-footer {
-        height: 10vh;
-        background-color: #ff906b;
-        margin-top: 100px;
-    }
-    
-    @media screen and (max-width: 360px) {
-        .activity-container {
-            flex-direction: column;
-        }
-        .activity-column {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            height: 480px;
-            margin-bottom: 10px;
-            word-wrap: break-word;
-            overflow: scroll;
-        }
-        .activity-content {
-            font-size: 15px;
-        }
-        .activity-column h3 {
-            font-size: 30px;
-        }
-        .activity-img {
-            width: 100%;
-            height: 30vh;
-            object-fit: cover;
-        }
-        .photo-title {
-            justify-content: flex-start;
-            width: 20vh;
-            height: 30vw;
-        }
-        #cuba1 {
-            display: none;
-        }
-        .home-section-title {
-            display: flex;
-            align-items: center;
-            margin-top: px;
-            font-size: 30px;
-            text-align: center;
-        }
-        .photo-title {
-            display: none;
-        }
-        .titleform {
-            text-align: center;
-        }
-        .pic-ctn {
-            display: none;
-        }
-    }
-    /* fin de condition de voyage  */
-    /* caroussel */
-    
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    
-    p label {
-        font: 1rem 'Fira Sans', sans-serif;
-    }
-    
-    .input {
-        margin: .10rem;
-    }
-    
-    .inputcheck {
-        display: flex;
-        justify-content: space-around;
-        height: 50PX;
-        background-color: #00B9FF;
-        box-shadow: 5px 5px 15px 0px #000000;
-    }
-    
-    .container {
-        display: flex;
-        align-items: center;
-    }
-    
-    .input {
-        margin-top: 15px;
-    }
-    
-    @media screen and (min-width: 360px) {
-        .pic-ctn {
-            display: flex;
-            justify-content: center;
-            height: 200px;
-        }
-    }
-    
-    @keyframes display {
-        0% {
-            transform: translateX(200px);
-            opacity: 0;
-        }
-        10% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        20% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        30% {
-            transform: translateX(-200px);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(-200px);
-            opacity: 0;
-        }
-    }
-    
-    .pic-ctn {
-        position: relative;
-        width: 100vw;
-        height: 300px;
-        margin-top: 15vh;
-    }
-    
-    .pic-ctn>img {
-        position: absolute;
-        top: 0;
-        opacity: 0;
-        animation: display 10s infinite;
-        box-shadow: 5px 5px 15px 0px #000000;
-    }
-    
-    img:nth-child(2) {
-        animation-delay: 2s;
-    }
-    
-    img:nth-child(3) {
-        animation-delay: 4s;
-    }
-    
-    img:nth-child(4) {
-        animation-delay: 6s;
-    }
-    
-    img:nth-child(5) {
-        animation-delay: 8s;
-    }
-    
-    .titleform {
-        margin-bottom: 20px;
-        text-align: center;
-    }
+            * {
+                box-sizing: border-box;
+            }
+            
+            .activity-content {
+                font-family: var(--body-font);
+                font-size: var(--font-size-body);
+            }
+            
+            .activity-title {
+                color: var(--title-color);
+                font-size: var(--font-size-title);
+            }
+            
+            .home-main-title {
+                color: #ffdd71;
+                text-align: center;
+            }
+            /* section */
+            
+            .home-section-title {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 80px;
+                left: 15%;
+                position: relative;
+            }
+            
+            #cuba1 {
+                float: right;
+                height: 10vh;
+                position: relative;
+                z-index: -1;
+                bottom: 280px;
+                right: 20px;
+            }
+            
+            .photo-title {
+                z-index: -1px;
+                justify-content: flex-start;
+                height: 30vh;
+            }
+            
+            .activity-container {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 60px;
+                height: 700px;
+            }
+            
+            .activity-column {
+                overflow: scroll;
+                width: 30%;
+                border: #020202 solid 1px;
+                box-shadow: 5px 5px 15px 0px #000000;
+            }
+            /* images */
+            
+            .activity-img {
+                width: 100%;
+                height: 30vh;
+                object-fit: cover;
+            }
+            
+            hr {
+                height: 3px;
+                background-color: rgb(243, 3, 3);
+            }
+            
+            .activity-column h3 {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .activity-column p {
+                text-align: justify;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* footer */
+            
+            .home-footer {
+                height: 10vh;
+                background-color: #ff906b;
+                margin-top: 100px;
+            }
+            /* fin de condition de voyage  */
+            /* caroussel */
+            
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            p label {
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+            
+            .input {
+                margin: .10rem;
+            }
+            
+            .inputcheck {
+                display: flex;
+                justify-content: space-around;
+                height: 50PX;
+                background-color: #00B9FF;
+                box-shadow: 5px 5px 15px 0px #000000;
+            }
+            
+            .container {
+                display: flex;
+                align-items: center;
+            }
+            
+            .input {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+            }
+            
+            @keyframes display {
+                0% {
+                    transform: translateX(200px);
+                    opacity: 0;
+                }
+                10% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                20% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                30% {
+                    transform: translateX(-200px);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateX(-200px);
+                    opacity: 0;
+                }
+            }
+            
+            .pic-ctn {
+                position: relative;
+                width: 100vw;
+                height: 300px;
+                margin-top: 15vh;
+                margin-bottom: 150px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .pic-ctn>img {
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                animation: display 10s infinite;
+                box-shadow: 5px 5px 15px 0px #000000;
+            }
+            
+            img:nth-child(2) {
+                animation-delay: 2s;
+            }
+            
+            img:nth-child(3) {
+                animation-delay: 4s;
+            }
+            
+            img:nth-child(4) {
+                animation-delay: 6s;
+            }
+            
+            img:nth-child(5) {
+                animation-delay: 8s;
+            }
+            
+            .titleform {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            /* button */
+            
+            .styled {
+                border: 0;
+                line-height: 2.5;
+                padding: 0 20px;
+                font-size: 1rem;
+                text-align: center;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+                border-radius: 10px;
+                background-color: rgba(220, 0, 0, 1);
+                background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+                box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+            }
+            
+            .styled:hover {
+                background-color: rgba(255, 0, 0, 1);
+            }
+            
+            .styled:active {
+                box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+            }
+            
+            .button {
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+            
+            @media screen and (max-width: 400px) {
+                .activity-container {
+                    flex-direction: column;
+                }
+                .activity-column {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 480px;
+                    margin-bottom: 10px;
+                    word-wrap: break-word;
+                    overflow: scroll;
+                }
+                .activity-content {
+                    font-size: 15px;
+                }
+                .activity-column h3 {
+                    font-size: 30px;
+                }
+                .home-section-title {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 80px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .activity-img {
+                    width: 100%;
+                    height: 30vh;
+                    object-fit: cover;
+                }
+                .photo-title {
+                    justify-content: flex-start;
+                    width: 20vh;
+                    height: 30vw;
+                }
+                #cuba1 {
+                    display: none;
+                }
+                .photo-title {
+                    display: none;
+                }
+                .titleform {
+                    text-align: center;
+                }
+                .pic-ctn {
+                    display: none;
+                }
+            }
+            
+            @media screen and (min-width:401px) and (max-width:800px) {
+                .activity-container {
+                    flex-direction: column;
+                }
+                .activity-column {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 480px;
+                    margin-bottom: 10px;
+                    word-wrap: break-word;
+                    overflow: scroll;
+                }
+                .activity-content {
+                    font-size: 15px;
+                }
+                .activity-column h3 {
+                    font-size: 30px;
+                }
+                .home-section-title {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 80px;
+                    font-size: 30px;
+                    left: 0px;
+                    text-align: center;
+                }
+                .activity-img {
+                    width: 100%;
+                    height: 30vh;
+                    object-fit: cover;
+                }
+                .photo-title {
+                    justify-content: flex-start;
+                    width: 20vh;
+                    height: 30vw;
+                }
+                #cuba1 {
+                    display: none;
+                }
+                .photo-title {
+                    display: none;
+                }
+                .titleform {
+                    text-align: center;
+                }
+                .pic-ctn {
+                    display: none;
+                }
+            }
