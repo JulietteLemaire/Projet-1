@@ -1,3 +1,7 @@
+    * {
+        box-sizing: border-box;
+    }
+    
     .activity-content {
         font-family: var(--body-font);
         font-size: var(--font-size-body);
@@ -107,6 +111,13 @@
         .activity-column h3 {
             font-size: 30px;
         }
+        .home-section-title {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            font-size: 30px;
+            text-align: center;
+        }
         .activity-img {
             width: 100%;
             height: 30vh;
@@ -119,13 +130,6 @@
         }
         #cuba1 {
             display: none;
-        }
-        .home-section-title {
-            display: flex;
-            align-items: center;
-            margin-top: px;
-            font-size: 30px;
-            text-align: center;
         }
         .photo-title {
             display: none;
@@ -172,10 +176,32 @@
     }
     
     @media screen and (min-width: 360px) {
-        .pic-ctn {
+        .home-section-title {
             display: flex;
             justify-content: center;
-            height: 200px;
+            margin-top: 80px;
+            font-size: 30px;
+        }
+        .pic-ctn {
+            display: none;
+        }
+        #cuba1 {
+            display: none;
+        }
+        .photo-title {
+            display: none;
+        }
+        .activity-container {
+            flex-direction: column;
+        }
+        .activity-column {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 480px;
+            margin-bottom: 10px;
+            word-wrap: break-word;
+            overflow: scroll;
         }
     }
     
@@ -207,6 +233,7 @@
         width: 100vw;
         height: 300px;
         margin-top: 15vh;
+        margin-bottom: 150px;
     }
     
     .pic-ctn>img {
