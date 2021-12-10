@@ -168,7 +168,7 @@ a {
     left:0;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:800px) {
     .burgerMenu,
     .toggleBtn {
         display:block;
@@ -207,7 +207,7 @@ a {
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
     .weather {
         display:none;
     }
@@ -372,7 +372,7 @@ footer {
     padding-bottom: 10px;
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
     .footerSection {
         display: flex;
         flex-direction: column;
