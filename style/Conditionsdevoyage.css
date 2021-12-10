@@ -120,13 +120,11 @@
             .input {
                 display: flex;
                 justify-content: center;
-                margin-top: 05px;
+                align-items: center;
             }
             
             .input4 {
-                display: flex;
                 justify-content: center;
-                margin-bottom: 10px;
             }
             
             @keyframes display {
@@ -242,7 +240,6 @@
                 }
                 .home-section-title {
                     display: flex;
-                    justify-content: center;
                     margin-top: 80px;
                     font-size: 30px;
                     text-align: center;
@@ -268,6 +265,13 @@
                 }
                 .pic-ctn {
                     display: none;
+                }
+                .inputcheck {
+                    flex-direction: column;
+                    height: 100%;
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
             
