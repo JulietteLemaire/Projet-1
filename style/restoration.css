@@ -33,80 +33,6 @@ h2 {
     height: 300px
 }
 
-@media screen and (max-width: 360px) {
-    .containerItemLarge {
-        display: none;
-    }
-    .carousel {
-        display: block;
-        height: 400px;
-    }
-    .item {
-        width: 300px;
-        height: 300px;
-    }
-    .activeMenu a {
-        padding: 0;
-        font-size: small;
-        background-color: var(--background-start);
-        color: var(--nav-btn-color);
-    }
-    .sliderItem {
-        min-width: 100px;
-    }
-    .SlideContainer {
-        width: 210px;
-    }
-}
-
-@media screen and (min-width: 361px) {
-    .containerItemLarge {
-        display: flex;
-        flex-direction: column;
-    }
-    .carousel {
-        display: none;
-    }
-    .activeMenu a {
-        padding: 0;
-        font-size: small;
-        background-color: var(--background-start);
-        color: var(--nav-btn-color);
-    }
-    .sliderItem {
-        min-width: 100px;
-    }
-    .SlideContainer {
-        width: 315px;
-    }
-}
-
-@media screen and (min-width: 767px) {
-    .containerItemLarge {
-        display: flex;
-        flex-direction: row;
-    }
-    .carousel {
-        display: none;
-    }
-    .activeMenu a {
-        padding: 10px;
-        font-size: inherit;
-        background-color: var(--nav-btn-color);
-        color: var(--background-start);
-        padding: 10px;
-    }
-    .sliderItem {
-        min-width: 200px;
-    }
-    .SlideContainer {
-        width: 1025px;
-    }
-    .imgItemSlide img {
-        width: 200px;
-    }
-}
-
 
 /* Import CSS pour carousel*/
 
@@ -408,7 +334,7 @@ li {
 .titleItemSlide {
     padding-top: 2px;
     padding-bottom: 2px;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
 }
 
 .btnItemSlide {
@@ -433,4 +359,87 @@ li {
     transform: scale(1.2);
     background-color: var(--nav-btn-color);
     color: black;
+}
+
+@media screen and (max-width: 360px) {
+    .containerItemLarge {
+        display: none;
+    }
+    .carousel {
+        display: block;
+        height: 400px;
+    }
+    .item {
+        width: 300px;
+        height: 300px;
+    }
+    .activeMenu a {
+        padding: 0;
+        font-size: small;
+        background-color: var(--background-start);
+        color: var(--nav-btn-color);
+    }
+    .sliderItem {
+        min-width: 100px;
+    }
+    .SlideContainer {
+        width: 210px;
+    }
+    .titleItemSlide {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 766px) {
+    .containerItemLarge {
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel {
+        display: none;
+    }
+    .activeMenu a {
+        padding: 0;
+        font-size: small;
+        background-color: var(--background-start);
+        color: var(--nav-btn-color);
+    }
+    .sliderItem {
+        min-width: 100px;
+    }
+    .titleItemSlide {
+        font-size: 0.6rem;
+    }
+    .SlideContainer {
+        width: 315px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .containerItemLarge {
+        display: flex;
+        flex-direction: row;
+    }
+    .carousel {
+        display: none;
+    }
+    .activeMenu a {
+        padding: 10px;
+        font-size: inherit;
+        background-color: var(--nav-btn-color);
+        color: var(--background-start);
+        padding: 10px;
+    }
+    .sliderItem {
+        min-width: 200px;
+    }
+    .SlideContainer {
+        width: 1025px;
+    }
+    .imgItemSlide img {
+        width: 200px;
+    }
+    .titleItemSlide {
+        font-size: 1.1rem;
+    }
 }
