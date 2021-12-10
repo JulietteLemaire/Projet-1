@@ -23,25 +23,26 @@ h3{
     margin-left: 25px;
 }
 
-
 .pageActivites{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 50px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     align-items:flex-start;
-    /*border: 2px solid #f8fdff;
-    background-color: #f8fdff;
-    border-radius: 10px;*/
+    /*border: 2px solid #f8fdff;*/
+}
+
+.blocActivites:nth-child(1){
+    flex:1;
 }
 
 .liens{
     display: flex;
     flex-direction: column;
-    width: 120%;
+    width: 110%;
     margin-bottom: 60px;
     margin-top: 20px;
     margin-left: 10px;
@@ -70,8 +71,6 @@ h3{
     text-align:left;
     color: black;
     font-size: 18px;
-
-
 }
 
 .liens:hover{
@@ -183,26 +182,6 @@ p{
     text-align: justify;
 }
 
-.excursion{
-  border: solid 2px #00D4ED;
-  border-radius: 10px;
-  /*background-color: #00D4ED;*/
-  width: 320px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  margin-left: 50px;
-  margin-right:50px;  
-  text-align: justify;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: var(--font-size-body);
-}
-
-.excursion:hover{
-    transform: scale(1.2);
-    
-}
-
 .musicPlayer{
     font-family: var(--body-font);
     padding: 5px;
@@ -226,7 +205,6 @@ figure{
     flex-direction: column;
     background-color: #F9F871;
     border-radius: 10px;
-
 }
 
 figure:active{
@@ -240,139 +218,7 @@ figure:hover{
 
 
 
-@media screen and (max-width: 767px){
-    
-    .pageActivites{
-        overflow: auto;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        margin: auto;
-    }
-    
-    .liens{
-        overflow: auto;
-        height: auto;
-        width: 70vh;
-        /*border: black solid 2px;
-        border-radius: 10px;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto; 
-        margin-bottom: 10px;
-    }
-
-    article {
-        overflow: auto;
-        height: auto;
-        width: auto;
-        /*border: black solid 2px;
-        border-radius: 10px;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto;
-     }
-
-     h3{
-         margin-top: 18px;
-     }
-
-    .havaneFirst{
-        display:none
-    } 
-
-    .havaneSecond {
-    display: flex;
-    align-items: center;
-    width:auto;
-    flex-direction: row;
-    }
-    
-    .havaneThird{
-        display: none;
-    }
-    
-    .trinidadSecond {
-        display:none;
-    }
-    
-    .trinidadFirst {
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-        object-fit: contain;
-    }
-
-    .natureFirst{
-        display: none;
-    }
-    .natureSecond{
-        display: none;
-    }
-
-    .natureThird{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .musicFirst{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .musicSecond{
-        display: none;
-    }
-
-    .musicThird{
-        display: none;
-    }
-
-    .produitsFirst{
-        display: none;
-    }
-
-    .produitsSecond{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .voituresFirst{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .voituresSecond{
-        display: none;
-    }
-
-    .imgContainer{
-        display: flex;
-        justify-content: center;
-        flex-direction:row;
-        } 
-
-.navA:active{
-    transform: none;
-}
-}
-
-
-
-@media screen and (max-width: 360px){
+@media screen and (max-width: 400px){
 
     .pageActivites{
         overflow: auto;
@@ -382,13 +228,17 @@ figure:hover{
         flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
-        margin: auto;
-        border:solid black;
+        /*margin: auto;
+       border:solid black;*/
+    }    
+
+    .blocActivites{
+        margin-bottom: 3px;
     }
 
     .liens{
         /*overflow:hidden;*/
-        border: black solid 2px;
+        /*border: black solid 2px;*/
         border-radius: 10px;
         width: 80%;
         display: flex;
@@ -401,12 +251,11 @@ figure:hover{
         overflow:hidden;
         height: auto;
         width: 90%;
-        border: black solid 2px;
+        /*border: black solid 2px;*/
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        /*margin: auto;*/
      }
 
 
@@ -425,16 +274,11 @@ figure:hover{
     flex-direction: row;
     }
     
-    .havaneThird{
-        display: none;
-    }
     
     .trinidadSecond {
         display:none;
     }
-    /*.trinidadThird {
-        display:none;
-    }*/
+    
     .trinidadFirst {
         display: flex;
         align-items: center;
@@ -498,20 +342,194 @@ figure:hover{
         display: flex;
         justify-content: center;
         flex-direction:row;
-        } 
+    }
+} 
 
+@media screen and (min-width: 401px) and (max-width: 800px){
+    .pageActivites{
+            overflow: auto;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            /*margin: auto;
+           border:solid black;*/
+        }    
 
-    .excursion{   
-        /*background-color: #00D4ED;*/
-        height: auto;
-        width: 50%; 
-        text-align: justify;
-        padding: 10px;
-        margin-bottom: 20px;
-        font-size: var(--font-size-body);
+        .blocActivites{
+        margin-bottom: 3px;
     }
 
-.navA:active{
-    transform: none;
+        .havaneFirst{
+            display:none;
+        } 
+    
+        .havaneSecond {
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
+        }
+        
+        .trinidadSecond {
+            display:none;
+        }
+        
+        .trinidadFirst {
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+            object-fit: contain;
+        }
+    
+        .natureFirst{
+            display: none;
+        }
+        .natureSecond{
+            display: none;
+        }
+    
+        .natureThird{
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+        }
+    
+        .musicFirst{
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+        }
+    
+        .musicSecond{
+            display: none;
+        }
+    
+        .musicThird{
+            display: none;
+        }
+    
+        .produitsFirst{
+            display: none;
+        }
+    
+        .produitsSecond{
+            display: flex;
+            align-items: center;
+            width:95%;
+            flex-direction: row;
+        }
+    
+        .voituresFirst{
+            display: flex;
+            align-items: center;
+            width:95%;
+            flex-direction: row;
+        }
+    
+        .voituresSecond{
+            display: none;
+        }
+
+        .imgContainer{
+            display: flex;
+            justify-content: center;
+            flex-direction:row;
+        }   
+
+       .liens{
+        /*overflow:hidden;*/
+        /*border: black solid 2px;*/
+        border-radius: 10px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    } 
+}    
+
+@media screen and (min-width: 800px){
+    
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }   
+
+    .havaneFirst{
+        object-fit: contain;
+    } 
+
+    .havaneSecond {
+        object-fit: contain;
+
+    }
+    
+    .trinidadSecond {
+        object-fit: contain;
+
+    }
+    
+    .trinidadFirst {
+        object-fit: contain;
+
+    }
+
+    .natureFirst{
+        object-fit: contain;
+
+    }
+    .natureSecond{
+        object-fit: contain;
+    }   
+
+
+    .natureThird{
+        object-fit: contain;
+
+    }
+
+    .musicFirst{
+        object-fit: contain;
+
+    }
+
+    .musicSecond{
+        object-fit: contain;
+    }
+
+    .musicThird{
+        object-fit: contain;
+
+    }
+
+    .produitsFirst{
+        object-fit: contain;
+    }
+
+    .produitsSecond{
+        object-fit: contain;
+
+    }
+
+    .voituresFirst{
+        object-fit: contain;
+
+    }
+
+    .voituresSecond{
+        object-fit: contain;
+
+    }
 }
-}
+
+
+
+
