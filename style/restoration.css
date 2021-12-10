@@ -2,6 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 5px;
 }
 
 h2 {
@@ -30,80 +31,6 @@ h2 {
     margin-right: auto;
     width: 450px;
     height: 300px
-}
-
-@media screen and (max-width: 360px) {
-    .containerItemLarge {
-        display: none;
-    }
-    .carousel {
-        display: block;
-        height: 400px;
-    }
-    .item {
-        width: 300px;
-        height: 300px;
-    }
-    .activeMenu a {
-        padding: 0;
-        font-size: small;
-        background-color: var(--background-start);
-        color: var(--nav-btn-color);
-    }
-    .sliderItem {
-        min-width: 100px;
-    }
-    .SlideContainer {
-        width: 210px;
-    }
-}
-
-@media screen and (min-width: 361px) {
-    .containerItemLarge {
-        display: flex;
-        flex-direction: column;
-    }
-    .carousel {
-        display: none;
-    }
-    .activeMenu a {
-        padding: 0;
-        font-size: small;
-        background-color: var(--background-start);
-        color: var(--nav-btn-color);
-    }
-    .sliderItem {
-        min-width: 100px;
-    }
-    .SlideContainer {
-        width: 315px;
-    }
-}
-
-@media screen and (min-width: 767px) {
-    .containerItemLarge {
-        display: flex;
-        flex-direction: row;
-    }
-    .carousel {
-        display: none;
-    }
-    .activeMenu a {
-        padding: 10px;
-        font-size: inherit;
-        background-color: var(--nav-btn-color);
-        color: var(--background-start);
-        padding: 10px;
-    }
-    .sliderItem {
-        min-width: 200px;
-    }
-    .SlideContainer {
-        width: 1025px;
-    }
-    .imgItemSlide img {
-        width: 200px;
-    }
 }
 
 
@@ -334,20 +261,30 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .left,
 .right {
     height: 100%;
     cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
 }
 
 .left {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .right {
-    margin-left: 5px;
+    margin-left: 10px;
+}
+
+.left:hover,
+.right:hover {
+    color: red;
 }
 
 .sliderItem {
@@ -383,7 +320,7 @@ li {
 
 .imgItemSlide {
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     max-height: 120px;
     overflow: hidden;
 }
@@ -397,7 +334,7 @@ li {
 .titleItemSlide {
     padding-top: 2px;
     padding-bottom: 2px;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
 }
 
 .btnItemSlide {
@@ -422,4 +359,97 @@ li {
     transform: scale(1.2);
     background-color: var(--nav-btn-color);
     color: black;
+}
+
+@media screen and (max-width: 401px) {
+    .containerItemLarge {
+        display: none;
+    }
+    .carousel {
+        display: block;
+        height: 400px;
+    }
+    .item {
+        width: 300px;
+        height: 300px;
+    }
+    .activeMenu a {
+        padding: 0;
+        font-size: small;
+        background-color: var(--background-start);
+        color: var(--nav-btn-color);
+    }
+    .sliderItem {
+        min-width: 100px;
+    }
+    .SlideContainer {
+        width: 210px;
+    }
+    .titleItemSlide {
+        font-size: 0.6rem;
+    }
+    .imgItemSlide img {
+        max-height: 120px;
+        overflow: hidden;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    .containerItemLarge {
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel {
+        display: none;
+    }
+    .activeMenu a {
+        padding: 0;
+        font-size: small;
+        background-color: var(--background-start);
+        color: var(--nav-btn-color);
+    }
+    .sliderItem {
+        min-width: 100px;
+    }
+    .titleItemSlide {
+        font-size: 0.6rem;
+    }
+    .SlideContainer {
+        width: 315px;
+    }
+    .imgItemSlide img {
+        max-height: 120px;
+        overflow: hidden;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .containerItemLarge {
+        display: flex;
+        flex-direction: row;
+    }
+    .carousel {
+        display: none;
+    }
+    .activeMenu a {
+        padding: 10px;
+        font-size: inherit;
+        background-color: var(--nav-btn-color);
+        color: var(--background-start);
+        padding: 10px;
+    }
+    .sliderItem {
+        min-width: 200px;
+    }
+    .SlideContainer {
+        width: 1025px;
+    }
+    .imgItemSlide img {
+        width: 200px;
+    }
+    .titleItemSlide {
+        font-size: 1.1rem;
+    }
 }
