@@ -320,7 +320,7 @@ li {
 
 .imgItemSlide {
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     max-height: 120px;
     overflow: hidden;
 }
@@ -388,6 +388,11 @@ li {
     .titleItemSlide {
         font-size: 0.6rem;
     }
+    .imgItemSlide img {
+        max-height: 120px;
+        overflow: hidden;
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 361px) and (max-width: 766px) {
@@ -412,6 +417,11 @@ li {
     }
     .SlideContainer {
         width: 315px;
+    }
+    .imgItemSlide img {
+        max-height: 120px;
+        overflow: hidden;
+        width: auto;
     }
 }
 
