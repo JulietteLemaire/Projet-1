@@ -361,7 +361,7 @@ li {
     color: black;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 401px) {
     .containerItemLarge {
         display: none;
     }
@@ -395,7 +395,7 @@ li {
     }
 }
 
-@media screen and (min-width: 361px) and (max-width: 766px) {
+@media screen and (min-width: 401px) and (max-width: 800px) {
     .containerItemLarge {
         display: flex;
         flex-direction: column;
@@ -425,7 +425,7 @@ li {
     }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 801px) {
     .containerItemLarge {
         display: flex;
         flex-direction: row;
