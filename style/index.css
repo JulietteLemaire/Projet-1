@@ -212,15 +212,6 @@ a {
     .logoFlagImg {
         height: 80px;
     }
-<<<<<<< HEAD
-=======
-}
-
-.divFantome {
-    background-color: orange;
-    height: 300px;
-    width: 100%;
->>>>>>> karimloveyou
 }
 
 
@@ -372,11 +363,7 @@ footer {
     padding-bottom: 10px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width:400px) {
-=======
-@media screen and (max-width:360px) {
->>>>>>> karimloveyou
     .footerSection {
         display: flex;
         flex-direction: column;
