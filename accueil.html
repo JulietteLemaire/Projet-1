@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/acueil.css">
+    <link rel="stylesheet" href="style/accueil.css">
     <script src="https://kit.fontawesome.com/9a870bb70a.js" crossorigin="anonymous"></script>
     <title>Voyager à Cuba</title>
 </head>
@@ -39,12 +39,27 @@
             </ul>
         </nav>
         </header>  
-        <div class="divFantome"></div>
-    <!--<main>  
-        <section class="paragraph">
-            <div class="firstParagraph">
-                <h2 class="titleParagraph">Bienvenu à Cuba:</h2>
-                <p>Bienvenue sur l'île de Cuba, la plus grande des Antilles avec 106 449 km² de superficie. <br>
+        
+<main>  
+     <section class="carrousselContainer">
+        <div class="carousel">
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+        </div>
+    </section>
+ <div class="fantome"></div>
+
+     <section class="paragraph">
+         <div class="firstParagraph">
+             <h2 class="titleParagraph">Bienvenue à Cuba:</h2>
+             <p>Bienvenue sur l'île de Cuba, la plus grande des Antilles avec 106 449 km² de superficie. <br>
                 Ce pays, au climat tropical, est formé de plaines et de plateaux calcaires, <br>
                 en dehors du Sud-Est, qui est montagneux. <br>
                 Cuba a longtemps été un important producteur de sucre et fournit aussi du tabac et des fruits tropicaux. <br> 
@@ -64,33 +79,46 @@
        
             <div class="activity">
         
-                <div class="buttonActivity">Activités</div>
-                <img src="assets/trompetteCuba.jpg" alt="trompetteCuba" id="imgActivity">
-            </div>
-           
-            <div class="hotel">
-                <div class="buttonActivity">Hotel</div>
-                <img src="https://a0.muscache.com/im/pictures/7947e344-39d3-4ed0-bd52-c06fcfd8f502.jpg?im_w=1200" alt="ImgHotel" id="imgHotel">
+            <div class="buttonActivity"><a href="activites.html">Activités</a></div>
+            <a href="activites.html"><img src="assets/trompetteCuba.jpg" 
+            alt="trompetteCuba" id="imgActivity"
+            ></a>
+        </div>
 
-             </div>
+        
+        
+        <div class="hotel">
+        
+            <div class="buttonActivity"><a href="restoration.html">Hotel</a></div>
+            <a href="restoration.html"><img src="https://a0.muscache.com/im/pictures/7947e344-39d3-4ed0-bd52-c06fcfd8f502.jpg?im_w=1200"
+            alt="ImgHotel" id="imgHotel"></a>
+
+        </div>
       
-            <div class="restaurant">
-                <div class="buttonActivity">Restaurant</div>
-                <img src="https://images.unsplash.com/photo-1529456649654-4a285c7aa832?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2012&q=80" alt="imgRestaurant" id="imgRestaurant">
-            </div>
-        </section>
+        <div class="restaurant">
+            <div class="buttonActivity"><a href="restoration.html">Restaurant</a></div>
+            <a href="restoration.html"><img src="https://images.unsplash.com/photo-1529456649654-4a285c7aa832?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2012&q=80" 
+            alt="imgRestaurant" id="imgRestaurant"></a>
+        </div>
+     </section>
+
+     <section>
+        <div class="theMap">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZhPNf0nkIMbkNjPbZHoWIg2zYisfdF1l&ehbc=2E312F" id="map"></iframe>
+        </div>
+     </section>
 
         <section>
     
-            <form action="" class="form">
-                <h2>Contactez nous</h2>
-                <input type="text" id="name" placeholder="Votre nom">
-                <input type="text" id="email" placeholder="Votre Email">
-                <textarea name="text" id="text" cols="30" rows="5" placeholder="Votre message"></textarea>
-                <button type="submit" id="submit">envoyé</button>
-            </form>
-        </section>
-    </main>-->
+        <form action="" class="form">
+            <h2>Contactez nous</h2>
+            <input type="text" id="name" placeholder="Votre nom" required>
+            <input type="text" id="email" placeholder="Votre Email">
+            <textarea name="text" id="text" cols="30" rows="5" placeholder="Votre message"></textarea>
+            <button type="submit" id="submit">Envoyer</button>
+        </form>
+    
+         
 
     <footer>
         <div class="footerContainer">
@@ -101,12 +129,12 @@
                         <div class="contactEmail">
                             <!-- <img src="img/enveloppe.png" alt="adresse mail"> -->
                             <i class="fas fa-at"></i>
-                            <a href="mailto:.....@....">Mail</a>
+                            <a href="mailto:louisdupas@....com">louisdupas@....com</a>
                         </div>
                         <div class="contactTelephone">
                             <!-- <img src="img/telephone.png" alt="numéro téléphone"> -->
                             <i class="fas fa-mobile-alt"></i>
-                            <a href="tel:00.00.00.00.00">Téléphone</a>
+                            <a href="tel:06.82.72.....">06.82.72......</a>
                         </div>
                     </div>
                 </div>          
@@ -149,11 +177,20 @@
         </div>
 </footer>
 <script>
-    const button = document.querySelectorById("submit")
-    button.onclick = function(){
-        
-        alert("merci");
-    }
+   document.addEventListener('submit', function (event){
+
+       const name = document.getElementById('name').value ;
+       const message = document.getElementById('text').value ;
+       const motBoire = message.toUpperCase('BOIRE');
+   
+
+       if( motBoire =='BOIRE' ){
+        alert(`${name} viens boire un coup ! c'est Louis qui paye ! `)
+       } else{ 
+           alert(`Merci ${name} pour votre message`) }
+
+       event.preventDefault();
+   })
 </script>
 </body>
 </html>
