@@ -15,93 +15,284 @@ h2{
     font-size: 20px;
     font-family: var(--body-font);
     padding: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
 }
+
+h3{
+    font-size: 18px;
+    font-family: var(--body-font);
+    font-style: italic;
+    padding: 7px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+.pageActivites{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items:flex-start;
+    /*border: 2px solid #f8fdff;*/
+}
+
+.blocActivites:nth-child(1){
+    flex:1;
+}
+
+.liens{
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items:flex-start;
+    border-radius: 10px;
+    background-color: #fcfba8;
+}
+
+
+.liensTitle{
+  
+    font-style: bold;
+    font-size: 20px;
+    text-align:center;
+    font-style: var(--body-font);
+    color: #C40909;
+}
+
+.liensRéservations{
+    margin-top:15px;
+    margin-bottom:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-style: normal;
+    text-align:left;
+    color: black;
+    font-size: 18px;
+}
+
+.liens:hover{
+    transform: scale(1.2);
+}
+
+.liensRéservations:link{
+    color:black;
+}
+.liensRéservations:hover{
+    text-decoration: underline;
+}
+
+.blocActivites{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items:flex-start;
+}
+
 
 article{
-   height: 500px;
-   width: 90%;
-   /*border: black solid 2px;*/
-   border-radius: 10px;
-   display: flex;
+   display:flex;
    flex-direction: column;
    justify-content: space-evenly;
-   margin: 30px;
-   box-shadow: 3px 3px 4px black;
+   height: auto;
+   width: 100%;
+   padding: 3px;
+   margin-right: 2px;
+   margin-left: 0px;
+   margin-bottom: 40px;
+   /*border: black solid 2px;
+   border-radius: 10px;*/
+   text-align:justify;
+   
 }
 
-   
+
 .imgContainer{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction:row;
-} 
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction:row;
+    margin: 5px;
+    object-fit: contain;
+    width: auto;
+    height: auto;    
+}
 
 .havaneImg{
-width: 40%;
-height: 38vh;
-object-fit: contain;
+    width: 100%;
+    height: 45vh;
+    object-fit: contain;
 }
 
-.natureImg{
-width: 40%;
-height: 38vh;
-object-fit: contain;
+.trinidadImg{
+    width: 100%;
+    height: 43vh;
+    object-fit: contain;  
+}
+
+.natureImgVallee{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47.5vh;
+    object-fit: contain;
+}
+
+.natureImgPlage{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 46vh;
+    object-fit: contain; 
 }
 
 .musicImg{
-width: 40%;
-height: 40vh;
-object-fit: contain;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50vh;
+    object-fit: contain;
 }
 
-p{
+.produitsImg{
+    width: 100%;
+    height: 44.5vh;
+    object-fit: contain;  
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right:10px;
-    font-size: var(--font-size-body) ;
+}
+
+.voituresImg{
+    width: 100%;
+    height: 44.5vh;
+    object-fit: contain;  
+    margin-bottom: 10px;
+}
+
+
+p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right:20px;
+    font-size: var(--font-size-body);
+    text-align: justify;
 }
 
 .musicPlayer{
     font-family: var(--body-font);
     padding: 5px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     justify-content: center;
-
-
+    align-items:center;
 }
 
-.musicArticle{
-    height: 550;
-} 
+figcaption{
+    font-style: italic;
+    font-family: var (--body-font);
+}
+
+figure{
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F9F871;
+    border-radius: 10px;
+}
+
+figure:active{
+    background-color:#00D4ED;
+    border-radius: 10px;
+}
+
+figure:hover{
+    transform: scale(1.2);
+}
 
 
-@media screen and (max-width: 360px){
-    article{
+
+@media screen and (max-width: 400px){
+
+    .pageActivites{
         overflow: auto;
-        height: 300px;
+        height: auto;
         width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        /*margin: auto;
+       border:solid black;*/
+    }    
+
+    .blocActivites{
+        margin-bottom: 3px;
+    }
+
+    .liens{
+        /*overflow:hidden;*/
+        /*border: black solid 2px;*/
+        border-radius: 10px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    article {
+        overflow:hidden;
+        height: auto;
+        width: 90%;
         /*border: black solid 2px;*/
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin: 30px;
-        box-shadow: 3px 3px 4px black;
      }
-    .havanaThird {
+
+
+     h3{
+         margin-top: 18px;
+     }
+
+    .havaneFirst{
+        display:none
+    } 
+
+    .havaneSecond {
+    display: flex;
+    align-items: center;
+    width:90%;
+    flex-direction: row;
+    }
+    
+    
+    .trinidadSecond {
         display:none;
     }
-    .havanaFirst {
-        display:none;
-    }
-    .havanaSecond {
+    
+    .trinidadFirst {
         display: flex;
         align-items: center;
-        width:50%;
+        width:90%;
         flex-direction: row;
+        object-fit: contain;
     }
 
     .natureFirst{
@@ -109,6 +300,20 @@ p{
     }
     .natureSecond{
         display: none;
+    }
+
+    .natureThird{
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
+    }
+
+    .musicFirst{
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
     }
 
     .musicSecond{
@@ -119,29 +324,220 @@ p{
         display: none;
     }
 
+    .produitsFirst{
+        display: none;
+    }
+
+    .produitsSecond{
+        display: flex;
+        align-items: center;
+        width:95%;
+        flex-direction: row;
+    }
+
+    .voituresFirst{
+        display: flex;
+        align-items: center;
+        width:95%;
+        flex-direction: row;
+    }
+
+    .voituresSecond{
+        display: none;
+    }
+
     .imgContainer{
         display: flex;
         justify-content: center;
         flex-direction:row;
+    }
+} 
+
+@media screen and (min-width: 401px) and (max-width: 800px){
+    .pageActivites{
+            overflow: auto;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            /*margin: auto;
+           border:solid black;*/
+        }    
+
+        .blocActivites{
+        margin-bottom: 3px;
+    }
+
+        .havaneFirst{
+            display:none;
         } 
     
-    .havaneImg{
-    width: 80%;
-    height: 38vh;
-    object-fit: contain;
+        .havaneSecond {
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
+        }
+        
+        .trinidadSecond {
+            display:none;
+        }
+        
+        .trinidadFirst {
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+            object-fit: contain;
+        }
+    
+        .natureFirst{
+            display: none;
+        }
+        .natureSecond{
+            display: none;
+        }
+    
+        .natureThird{
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+        }
+    
+        .musicFirst{
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+        }
+    
+        .musicSecond{
+            display: none;
+        }
+    
+        .musicThird{
+            display: none;
+        }
+    
+        .produitsFirst{
+            display: none;
+        }
+    
+        .produitsSecond{
+            display: flex;
+            align-items: center;
+            width:95%;
+            flex-direction: row;
+        }
+    
+        .voituresFirst{
+            display: flex;
+            align-items: center;
+            width:95%;
+            flex-direction: row;
+        }
+    
+        .voituresSecond{
+            display: none;
+        }
+
+        .imgContainer{
+            display: flex;
+            justify-content: center;
+            flex-direction:row;
+        }   
+
+       .liens{
+        /*overflow:hidden;*/
+        /*border: black solid 2px;*/
+        border-radius: 10px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    } 
+}    
+
+@media screen and (min-width: 800px){
+    
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+    }   
+
+    .havaneFirst{
+        object-fit: contain;
+    } 
+
+    .havaneSecond {
+        object-fit: contain;
+
+    }
+    
+    .trinidadSecond {
+        object-fit: contain;
+
+    }
+    
+    .trinidadFirst {
+        object-fit: contain;
+
     }
 
-    .natureImg{
-        width: 80%;
-        height: 38vh;
+    .natureFirst{
+        object-fit: contain;
+
+    }
+    .natureSecond{
+        object-fit: contain;
+    }   
+
+
+    .natureThird{
+        object-fit: contain;
+
+    }
+
+    .musicFirst{
+        object-fit: contain;
+
+    }
+
+    .musicSecond{
         object-fit: contain;
     }
 
-    .musicImg{
-        width: 80%;
-        height: 38vh;
+    .musicThird{
+        object-fit: contain;
+
+    }
+
+    .produitsFirst{
         object-fit: contain;
     }
 
-  
+    .produitsSecond{
+        object-fit: contain;
+
+    }
+
+    .voituresFirst{
+        object-fit: contain;
+
+    }
+
+    .voituresSecond{
+        object-fit: contain;
+
+    }
 }
+
+
+
+
