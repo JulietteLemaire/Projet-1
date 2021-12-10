@@ -28,7 +28,7 @@ h3{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -41,7 +41,6 @@ h3{
 .liens{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 120%;
     margin-bottom: 60px;
     margin-top: 20px;
@@ -49,16 +48,16 @@ h3{
     margin-right: 10px;
     align-items:flex-start;
     border-radius: 10px;
-    background-color: #F9F871;
+    background-color: #fcfba8;
 }
 
 
 .liensTitle{
   
-    font-style: normal;
+    font-style: bold;
+    font-size: 20px;
     text-align:center;
     font-style: var(--body-font);
-    font-size: 22px;
     color: #C40909;
 }
 
@@ -70,7 +69,8 @@ h3{
     font-style: normal;
     text-align:left;
     color: black;
-    font-size: var(--font-size-body);
+    font-size: 18px;
+
 
 }
 
@@ -81,13 +81,8 @@ h3{
 .liensRéservations:link{
     color:black;
 }
-
-.liensRéservations:visited{
-    color: cadetblue;
-}
-
-.liensRéservations:active{
-    color: #00D4ED;
+.liensRéservations:hover{
+    text-decoration: underline;
 }
 
 .blocActivites{
@@ -386,14 +381,13 @@ figure:hover{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
+        align-items: center;
         margin: auto;
         border:solid black;
     }
 
     .liens{
         /*overflow:hidden;*/
-       /* height: auto;*/
-        margin-left: 60px;
         border: black solid 2px;
         border-radius: 10px;
         width: 80%;
