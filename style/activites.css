@@ -15,7 +15,7 @@ h2{
     font-size: 20px;
     font-family: var(--body-font);
     padding: 12px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     margin-top: 5px;
     margin-left: 5px;
     text-align: center;
@@ -31,21 +31,76 @@ h3{
     margin-left: 25px;
 }
 
-/*.intro{
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-left: 60px;
-    margin-right:60px;
-}*/
+.pageActivites{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items:flex-start;
+    /*border: 2px solid #f8fdff;*/
+}
+
+.blocActivites:nth-child(1){
+    flex:1;
+}
+
+.liens{
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items:flex-start;
+    border-radius: 10px;
+    background-color: #fcfba8;
+}
+
+
+.liensTitle{
+  
+    font-style: bold;
+    font-size: 20px;
+    text-align:center;
+    font-style: var(--body-font);
+    color: #C40909;
+}
+
+.liensRéservations{
+    margin-top:15px;
+    margin-bottom:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-style: normal;
+    text-align:left;
+    color: black;
+    font-size: 18px;
+}
+
+.liens:hover{
+    transform: scale(1.2);
+}
+
+.liensRéservations:link{
+    color:black;
+}
+.liensRéservations:hover{
+    text-decoration: underline;
+}
 
 .blocActivites{
     display: flex;
     flex-direction: column;
+    width: auto;
     justify-content: space-evenly;
     margin-bottom: 60px;
     margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
     align-items:flex-start;
 }
 
@@ -55,13 +110,13 @@ article{
    flex-direction: column;
    justify-content: space-evenly;
    height: auto;
-   width: auto;
-   margin-right: 10px;
-   margin-left: 10px;
+   width: 100%;
+   padding: 3px;
+   margin-right: 2px;
+   margin-left: 0px;
    margin-bottom: 40px;
    /*border: black solid 2px;
-   border-radius: 10px;
-   box-shadow: 3px 3px 4px black;*/
+   border-radius: 10px;*/
    text-align:justify;
    
 }
@@ -80,270 +135,59 @@ article{
 
 .havaneImg{
     width: 100%;
-    height: 58vh;
+    height: 45vh;
     object-fit: contain;
 }
 
 .trinidadImg{
     width: 100%;
-    height: 55vh;
+    height: 43vh;
     object-fit: contain;  
 }
 
-.natureImg{
+.natureImgVallee{
     width: 100%;
     margin-bottom: 10px;
-    height: 60vh;
+    height: 47.5vh;
     object-fit: contain;
+}
+
+.natureImgPlage{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 46vh;
+    object-fit: contain; 
 }
 
 .musicImg{
     width: 100%;
     margin-bottom: 10px;
-    height: 53vh;
+    height: 50vh;
     object-fit: contain;
 }
 
 .produitsImg{
     width: 100%;
-    height: 57vh;
+    height: 44.5vh;
     object-fit: contain;  
     margin-bottom: 20px;
 }
 
 .voituresImg{
     width: 100%;
-    height: 57vh;
+    height: 44.5vh;
     object-fit: contain;  
     margin-bottom: 10px;
 }
 
 
-
-/*.imgActContainer{
-    margin-top: 50px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-    align-items: center;
-    height:40px;
-    width: 100%;
-} 
-
-#carousel{
-    width: fit-content;
-    height: fit-content;
-    overflow:hidden;
-    border: solid 5px white;
-    border-radius: 10px;
-}
- 
-.activitesImg{
-    display: flex;
-    flex-direction: row;
-    animation-duration: 20s;
-    animation-name: mesImages;
-    animation-iteration-count: infinite;
-}
-
-@keyframes mesImages{
-    0% {
-        transform: translateX(0);
-        
-    }
-    20% {
-        transform: translateX(-640px) ;
-        
-    }
-    40% {
-        transform: translateX(-1280px) ;
-        
-    }
-    60%{ 
-        transform: translateX(-1920px) ;
-        
-    }
-    80% {
-        transform: translateX(-2560px) ;
-        
-    }
-    100% {
-        transform: translateX(0) ;
-        
-    }
-} 
-*/
-/*.imgContainer{
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-    align-items: center;
-    height:100vh;
-} 
-
-#carousel2{
-    width: 640px;
-    overflow:hidden;
-    border: solid 5px white;
-    border-radius: 10px;
-}
- 
-.trinidadImg{
-    display: flex;
-    flex-direction: row;
-    animation-duration: 20s;
-    animation-name: mesImages2;
-    animation-iteration-count: infinite;
-}
-
-@keyframes mesImages2{
-    0% {
-        transform: translateX(0);
-        
-    }
-    33.5% {
-        transform: translateX(-640px) ;
-        
-    }
-    66.5% {
-        transform: translateX(-1280px) ;
-        
-    }
-    100%{ 
-        transform: translateX(0) ;
-        
-    }
-} 
-
-.imgContainer{
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-    align-items: center;
-    height:100vh;
-} 
-
-#carousel3{
-    width: 640px;
-    overflow:hidden;
-    border: solid 5px white;
-    border-radius: 10px;
-}
- 
-.natureImg{
-    display: flex;
-    flex-direction: row;
-    animation-duration: 20s;
-    animation-name: mesImages3;
-    animation-iteration-count: infinite;
-}
-
-@keyframes mesImages3{
-    0% {
-        transform: translateX(0);
-        
-    }
-    20% {
-        transform: translateX(-640px) ;
-        
-    }
-    40% {
-        transform: translateX(-1280px) ;
-        
-    }
-    60%{ 
-        transform: translateX(-1920px) ;
-        
-    }
-    80% {
-        transform: translateX(-2560px) ;
-        
-    }
-    100% {
-        transform: translateX(0) ;
-        
-    }
-} 
-
-/*.imgContainer{
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-    align-items: center;
-    height:100vh;
-} 
-
-#carousel4{
-    width: 640px;
-    overflow:hidden;
-    border: solid 3px white;
-    border-radius: 10px;
-}
- 
-.cultureImg{
-    display: flex;
-    flex-direction: row;
-    animation-duration: 20s;
-    animation-name: mesImages4;
-    animation-iteration-count: infinite;
-}
-
-@keyframes mesImages4{
-    0% {
-        transform: translateX(0);
-        
-    }
-    20% {
-        transform: translateX(-640px) ;
-        
-    }
-    40% {
-        transform: translateX(-1280px) ;
-        
-    }
-    60%{ 
-        transform: translateX(-1920px) ;
-        
-    }
-    80% {
-        transform: translateX(-2560px) ;
-        
-    }
-    100% {
-        transform: translateX(0) ;
-        
-    }
-} 
-*/
-
 p{
     margin-top: 5px;
     margin-bottom: 20px;
-    margin-left: 60px;
-    margin-right:60px;
+    margin-left: 20px;
+    margin-right:20px;
     font-size: var(--font-size-body);
     text-align: justify;
-}
-
-.excursion{
-  border: solid 2px #00D4ED;
-  border-radius: 10px;
-  /*background-color: #00D4ED;*/
-  width: 320px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  margin-left: 50px;
-  margin-right:50px;  
-  text-align: justify;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: var(--font-size-body);
-}
-
-.excursion:hover{
-    transform: scale(1.2);
-    
 }
 
 .musicPlayer{
@@ -369,7 +213,6 @@ figure{
     flex-direction: column;
     background-color: #F9F871;
     border-radius: 10px;
-
 }
 
 figure:active{
@@ -383,139 +226,44 @@ figure:hover{
 
 
 
-@media screen and (max-width: 767px){
-    
+@media screen and (max-width: 400px){
+
+    .pageActivites{
+        overflow: auto;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        /*margin: auto;
+       border:solid black;*/
+    }    
+
     .blocActivites{
-        overflow: auto;
-        height: auto;
-        width: auto;
+        margin-bottom: 3px;
+    }
+
+    .liens{
+        /*overflow:hidden;*/
         /*border: black solid 2px;*/
-        /*border-radius: 10px;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto;
-
-    }
-
-    article {
-        overflow: auto;
-        height: auto;
-        width: auto;
-        border: black solid 2px;
         border-radius: 10px;
+        width: 80%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto;
-        /*box-shadow: 3px 3px 4px black;*/
-     }
-
-     h3{
-         margin-top: 18px;
-     }
-
-    .havaneFirst{
-        display:none
-    } 
-
-    .havaneSecond {
-    display: flex;
-    align-items: center;
-    width:auto;
-    flex-direction: row;
-    }
-    
-    .havaneThird{
-        display: none;
-    }
-    
-    .trinidadSecond {
-        display:none;
-    }
-    
-    .trinidadFirst {
-        display: flex;
         align-items: center;
-        width:auto;
-        flex-direction: row;
-        object-fit: contain;
+        margin-bottom: 10px;
     }
 
-    .natureFirst{
-        display: none;
-    }
-    .natureSecond{
-        display: none;
-    }
-
-    .natureThird{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .musicFirst{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .musicSecond{
-        display: none;
-    }
-
-    .musicThird{
-        display: none;
-    }
-
-    .produitsFirst{
-        display: none;
-    }
-
-    .produitsSecond{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .voituresFirst{
-        display: flex;
-        align-items: center;
-        width:auto;
-        flex-direction: row;
-    }
-
-    .voituresSecond{
-        display: none;
-    }
-
-    .imgContainer{
-        display: flex;
-        justify-content: center;
-        flex-direction:row;
-        } 
-
-.navA:active{
-    transform: none;
-}
-}
-
-@media screen and (max-width: 360px){
     article {
         overflow:hidden;
         height: auto;
         width: 90%;
-        border: black solid 2px;
+        /*border: black solid 2px;*/
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        /*margin: auto;*/
-        /*box-shadow: 3px 3px 4px black;*/
      }
 
 
@@ -534,16 +282,11 @@ figure:hover{
     flex-direction: row;
     }
     
-    .havaneThird{
-        display: none;
-    }
     
     .trinidadSecond {
         display:none;
     }
-    /*.trinidadThird {
-        display:none;
-    }*/
+    
     .trinidadFirst {
         display: flex;
         align-items: center;
@@ -607,26 +350,194 @@ figure:hover{
         display: flex;
         justify-content: center;
         flex-direction:row;
-        } 
+    }
+} 
 
+@media screen and (min-width: 401px) and (max-width: 800px){
+    .pageActivites{
+            overflow: auto;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            /*margin: auto;
+           border:solid black;*/
+        }    
+
+        .blocActivites{
+        margin-bottom: 3px;
+    }
+
+        .havaneFirst{
+            display:none;
+        } 
+    
+        .havaneSecond {
+        display: flex;
+        align-items: center;
+        width:90%;
+        flex-direction: row;
+        }
+        
+        .trinidadSecond {
+            display:none;
+        }
+        
+        .trinidadFirst {
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+            object-fit: contain;
+        }
+    
+        .natureFirst{
+            display: none;
+        }
+        .natureSecond{
+            display: none;
+        }
+    
+        .natureThird{
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+        }
+    
+        .musicFirst{
+            display: flex;
+            align-items: center;
+            width:90%;
+            flex-direction: row;
+        }
+    
+        .musicSecond{
+            display: none;
+        }
+    
+        .musicThird{
+            display: none;
+        }
+    
+        .produitsFirst{
+            display: none;
+        }
+    
+        .produitsSecond{
+            display: flex;
+            align-items: center;
+            width:95%;
+            flex-direction: row;
+        }
+    
+        .voituresFirst{
+            display: flex;
+            align-items: center;
+            width:95%;
+            flex-direction: row;
+        }
+    
+        .voituresSecond{
+            display: none;
+        }
+
+        .imgContainer{
+            display: flex;
+            justify-content: center;
+            flex-direction:row;
+        }   
+
+       .liens{
+        /*overflow:hidden;*/
+        /*border: black solid 2px;*/
+        border-radius: 10px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    } 
+}    
+
+@media screen and (min-width: 800px){
+    
 
     .imgContainer{
         display: flex;
         justify-content: center;
         flex-direction:row;
-        } 
+    }   
 
-    .excursion{   
-        /*background-color: #00D4ED;*/
-        height: auto;
-        width: 50%; 
-        text-align: justify;
-        padding: 10px;
-        margin-bottom: 20px;
-        font-size: var(--font-size-body);
+    .havaneFirst{
+        object-fit: contain;
+    } 
+
+    .havaneSecond {
+        object-fit: contain;
+
+    }
+    
+    .trinidadSecond {
+        object-fit: contain;
+
+    }
+    
+    .trinidadFirst {
+        object-fit: contain;
+
     }
 
-.navA:active{
-    transform: none;
+    .natureFirst{
+        object-fit: contain;
+
+    }
+    .natureSecond{
+        object-fit: contain;
+    }   
+
+
+    .natureThird{
+        object-fit: contain;
+
+    }
+
+    .musicFirst{
+        object-fit: contain;
+
+    }
+
+    .musicSecond{
+        object-fit: contain;
+    }
+
+    .musicThird{
+        object-fit: contain;
+
+    }
+
+    .produitsFirst{
+        object-fit: contain;
+    }
+
+    .produitsSecond{
+        object-fit: contain;
+
+    }
+
+    .voituresFirst{
+        object-fit: contain;
+
+    }
+
+    .voituresSecond{
+        object-fit: contain;
+
+    }
 }
-}
+
+
+
+
