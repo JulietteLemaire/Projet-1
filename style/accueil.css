@@ -135,6 +135,7 @@ button {
   right: 10px;
   background-size: cover;
   display: flex;
+  border-radius: 5px;
 }
 
 span {
